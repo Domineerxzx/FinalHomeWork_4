@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical"
+    android:padding="30dp">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/back"
+        android:onClick="back_to_myself"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@mipmap/user"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="请输入账号/手机号/邮箱号"
+        android:id="@+id/et_L_username"
+        android:singleLine="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:hint="请输入密码"
+        android:id="@+id/et_L_password"
+        android:singleLine="true"
+        android:inputType="textPassword"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="记住账号/密码"
+            android:textColor="#4787ff"
+            android:id="@+id/cb_remember"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/login"
+            android:text="Login"
+            android:textColor="#fff"
+            android:onClick="login"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="忘记密码？"
+            android:textSize="15sp"
+            android:textColor="#4787ff"
+            android:background="#0000"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:text="马上注册!"
+            android:textSize="15sp"
+            android:textColor="#4787ff"
+            android:layout_marginLeft="20dp"
+            android:background="#0000"
+            android:onClick="next_to_register"/>
+    </LinearLayout>
+</LinearLayout>

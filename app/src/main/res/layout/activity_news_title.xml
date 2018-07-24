@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bt_type1"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFF"
+                    android:text="热点"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_type2"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFF"
+                    android:text="娱乐"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_type3"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFF"
+                    android:text="体育"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_type4"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFF"
+                    android:text="IT"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_type5"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFF"
+                    android:text="时尚"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_type6"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFF"
+                    android:text="经济"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_type7"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="#FFFF"
+                    android:text="国际"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </FrameLayout>
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:background="@mipmap/adds" />
+</LinearLayout>

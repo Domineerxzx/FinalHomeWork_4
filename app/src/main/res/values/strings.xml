@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">墨迹新闻</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_read_and__discuss">Read_and_DiscussActivity</string>
+    <string name="title_activity_discuss">DiscussActivity</string>
+    <string name="title_activity_discuss_item">Discuss_itemActivity</string>
+    <string name="Unlogin">请先登录，否则无法查看评论内容</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="title_activity_discuss_live">DiscussLiveActivity</string>
+</resources>

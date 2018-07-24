@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/back"
+        android:onClick="back_to_live"
+        android:id="@+id/bt_back_to_live"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_below="@id/bt_back_to_live"
+        android:layout_marginTop="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="540dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <VideoView
+                    android:id="@+id/vv_live"
+                    android:layout_width="350dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/login"
+                        android:layout_margin="5dp"
+                        android:text="Play"
+                        android:textColor="#fff"
+                        android:onClick="play"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/login"
+                        android:layout_margin="5dp"
+                        android:text="Pause"
+                        android:textColor="#fff"
+                        android:onClick="pause"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/login"
+                        android:layout_margin="5dp"
+                        android:text="Stop"
+                        android:textColor="#fff"
+                        android:onClick="stop"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/login"
+                        android:layout_margin="5dp"
+                        android:text="Restart"
+                        android:textColor="#fff"
+                        android:onClick="restart"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_play_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="视频名"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@mipmap/like" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical"
+                        android:text="15993"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/play" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical"
+                        android:text="15689522"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/talk" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="56342"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <include layout="@layout/activity_all_view" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="评论"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_live_discuss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/live_bottom"
+        android:background="#000" />
+
+    <RelativeLayout
+        android:id="@+id/live_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:onClick="live_discuss"
+            android:id="@+id/discuss">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/discuss"
+                android:onClick="live_discuss" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:onClick="live_discuss"
+                android:text="写评论"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/share"
+            android:layout_toRightOf="@id/discuss"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/share" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
